@@ -1,7 +1,7 @@
 //Funzione Palindromo
 
 //Chiediamo all'utente una parola e salviamo il suo input nella variabile string
-let input_1 = prompt("Inserisci una parola:")
+const input_1 = prompt("Inserisci una parola o una frase:")
 
 function is_palindrome(string) {
     //Vogliamo che la stringa in input venga invertita in inverse_string
@@ -15,7 +15,7 @@ function is_palindrome(string) {
 
 //Annunciamo il risultato in console
 function tell_result(x) {
-    return is_palindrome(x) ? console.log(`La parola selezionata è un palindromo`) : console.log(`La parola selezionata non è un palindromo`)
+    return is_palindrome(x) ? console.log(`La parola/frase selezionata è un palindromo`) : console.log(`La parola/frase selezionata non è un palindromo`)
 }
 
 tell_result(input_1)
